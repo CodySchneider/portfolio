@@ -1,0 +1,88 @@
+body {
+	background:url(../images/bgBody.jpg) repeat-x top;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#Content {
+	position:relative;
+	height:580px;
+	width:960px;
+	margin:30px auto;
+	background:url(../images/bgContent.png) no-repeat;
+}
+#iPhone {
+	position:absolute;
+	z-index:0;
+	width:193px;
+	height:289px;
+	left:120px;
+	top:50px;
+	padding:79px 21px 130px 21px;
+	background:url(../images/iPhone.jpg) no-repeat;
+}
+#Rotator {
+	z-index:1;
+	position:absolute;
+	top:79px;
+	left:21px;
+}
+#logo {
+	position:absolute;
+	top:92px;
+	left:25px;
+	z-index:2;	
+}
+#Text {
+	width:500px;
+	position:absolute;
+	top:50px;
+	right:50px;
+}
+h1 {
+	color: #BF4B0D;
+	border-bottom:1px solid black;
+	padding:20px;
+	margin:0 0 20px 0;
+	font-weight:normal;
+}
+p {
+	padding: 0 20px;
+	margin:0 0 20px 0;
+}
+ul {
+	list-style-image:url(../images/bullet.png);
+}
+li {
+	padding:0 0 10px 0;
+}
+#Controls {
+	padding:20px 20px;
+	margin-bottom:20px;
+}
+.btn {
+	display:block;
+	float:left;
+	height:33px;
+	line-height:33px;
+	padding:0 30px;
+	color:black;
+	text-decoration:none;
+}
+#btnEnroll{
+	background:url(../images/btnPrimary.png) repeat-x;
+	border:1px solid #BF4B0D;
+}
+#btnContinue{
+	background:url(../images/btnSecondary.png) repeat-x;
+	border:1px solid #86B2D1;
+	margin-left:40px;
+	padding:0 20px;
+}
+#btnLogout {
+	position:absolute;
+	right:50px;
+	bottom:30px;
+}
+.clear {
+	clear:both;
+	height:0;
+}

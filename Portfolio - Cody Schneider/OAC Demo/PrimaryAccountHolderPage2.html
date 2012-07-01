@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--**************************************************************
+ * Author: Cody Schneider
+ * Date: 10-19-2010
+***************************************************************--> 
+  <title>OAC Demo - Enter Your Address</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="lib/greybox.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<script src="lib/jquery.greybox.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="Header">
+			<p><a href="index.html"><img src="images/logoBank.png" alt="Bank Logo" /></a></p>
+			<div id="SecondaryNavigation">
+				<a href="#" class="chatLink Inactive">Chat online now</a> | 
+				<a class="Inactive" href="#">Bank Home</a> | 
+				<a class="Inactive" href="#">Help</a>
+				<h1>Online Banking</h1>
+			</div>
+		</div><!-- end #Header -->
+		<div id="Sidebar">
+			<div id="Navigation" class="Container">
+				<p>You are applying for...</p>
+				<h2>Checking Account</h2>
+				<p><a class="Inactive" href="#">Learn more</a></p>
+				<hr/>
+				<ul>
+					<li class="complete"><a href="index.html">Get Started</a></li>
+					<li class="active"><a href="PrimaryAccountHolder.html">Enter Your Information</a></li>
+					<li class=""><a href="AccountOptions.html">Select Options</a></li>
+					<li class=""><a href="Verification.html">Review Your Information</a></li>
+					<li class=""><a href="Disclosures.html">Review Disclosures</a></li>
+					<li class=""><a href="InitialDeposit.html">Make a Deposit</a></li>
+					<li class=""><a href="Confirmation.html">Application Completed</a></li>
+				</ul>
+			</div>
+			<div id="Info" class="Container">
+				<h3>Need Help?</h3>
+				<p>Call (888) 123-4567</p>
+				<hr/>
+				<h3>FAQs</h3>
+				<p><a class="Inactive" href="#">How is my personal information used?</a></p>
+				<hr/>
+				<p><a href="#" class="chatLink Inactive">Chat online now</a></p>
+			</div>
+			<div id="Security" class="Container">
+				<h3>Security</h3>
+				<hr/>
+				<p>We use the latest security technologies to ensure the safety of your personal information</p>
+				<p>Learn more about our <a class="Inactive" href="#">security features</a> and <a class="Inactive" href="#">privacy policy</a></p>
+				<p><a class="Inactive center" href="#"><img src="images/logoVerisign.png" alt="Verisign Secured" /></a></p>
+			</div>
+		</div><!-- end #Sidebar -->
+		
+		<div id="Content" class="Container">
+ 
+			<div class="intro section">
+				<h2>Enter Address Information</h2>
+				<p class="moMargin">Enter address information for the primary account owner.</p>
+			</div>
+			<fieldset class="section">
+        <h2>Current address</h2>
+				<table class="Standard">
+					<tr>
+						<td><label for="PrimaryAddress1">Address:</label></td>
+						<td><input type="text" id="PrimaryAddress1" name="PrimaryAddress1"/>
+							<p class="info">(no P.O. boxes)</p>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="text" id="PrimaryAddress2" name="PrimaryAddress2"/>
+							<p class="info">(Enter apartment or unit number here)</p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="PrimaryCity">City:</label></td>
+						<td><input type="text" id="PrimaryCity" name="PrimaryCity"/></td>
+					</tr>
+					<tr>
+						<td><label for="PrimaryState">State:</label></td>
+						<td>
+                <select id="PrimaryState" name="PrimaryState">
+                  <option selected="selected" value=""></option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+            </td>
+					</tr>
+					<tr>
+						<td><label for="PrimaryZip">ZIP code:</label>
+							</td>
+						<td>
+							<input type="text" id="PrimaryZip5" name="PrimaryZip5" size="4" maxlength="5" /> - 
+							<input type="text" id="PrimaryZip4" name="PrimaryZip4" size="4" maxlength="4" />  
+						<p class="info">(First 5 digits required)</p></td>
+					</tr>
+					<tr>
+						<td><label for="PrimaryYears">Years at current address:</label></td>
+						<td>
+							<select class="dynType2" id="PrimaryYears" name="PrimaryYears">
+								<option value="0"></option>
+								<option value="1">Fewer than 2 years</option>
+								<option value="0">More than 2 years</option> 
+							</select>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+ 
+		<!---	<fieldset class="section option">
+				<h2>Previous address</h2>
+				<p>Since you have been at your current address less than two years, we need your previous address.</p>
+				<table class="Standard">
+					<tr>
+						<td><label for="PreviousAddress1">Address:</label></td>
+						<td><input type="text" id="PreviousAddress1" name="PreviousAddress1"/>
+            	<p class="info">(no P.O. boxes)</p>
+            </td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="text" id="PreviousAddress2" name="PreviousAddress2"/>
+							<p class="info">(Enter apartment or unit number here)</p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="PreviousCity">City:</label></td>
+						<td><input type="text" id="PreviousCity" name="PreviousCity"/></td>
+					</tr>
+					<tr>
+						<td><label for="PreviousState">State:</label></td>
+						<td>
+              <select id="PreviousState" name="PreviousState">
+                <option selected="selected" value=""></option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+          </td>
+					</tr>
+					<tr>
+						<td><label for="PreviousZip">ZIP code:</label></td>
+						<td>
+							<input type="text" id="PreviousZip5" name="PreviousZip5" size="4" maxlength="5" /> - 
+							<input type="text" id="PreviousZip4" name="PreviousZip4" size="4" maxlength="4" />  
+						</td>
+					</tr>
+				</table>
+			</fieldset> --->
+			
+			<fieldset class="section">
+				<h2>Mailing address</h2>
+				
+				<table class="DynamicColumn">
+					<tr>
+            <td><p>Is your mailing address the same as your current address?</p></td>
+						<td>
+							<input type="radio" id="MailingAddress" name="MailingAddress" value="Same" checked="checked" />
+							<label for="MailingAddressSame">Yes</label><br/>
+							<input type="radio" id="MailingAddress" name="MailingAddress" value="Different" />
+							<label for="MailingAddressDifferent">No</label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+ 
+			<fieldset class="section">
+				<h2>Citizenship status</h2>
+				<p>You can apply for this account if you are a U.S. citizen or a resident alien of the U.S.</p>
+				<table class="DynamicColumn">
+					<tr>
+            <td><p>What is your citizenship status?</p></td>
+						<td>
+							<input type="radio" id="CitizenshipResidency" name="CitizenshipResidency" value="US" checked="checked" />
+							<label for="CitizenshipResidencyUS">U.S. citizen</label><br/>
+							<input type="radio" id="CitizenshipResidency" name="CitizenshipResidency" value="Alien" />
+							<label for="CitizenshipResidencyAlien">Resident alien</label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+ 
+			<a class="btnContinue" href="AccountOptions.html"><img src="images/btnContinue.png" alt="Continue" /></a>
+		</div><!-- end #Content -->
+		<div class="clear"></div>
+		<div id="Footer">
+			<p>
+				<a class="Inactive" href="#">Privacy</a> | 
+				<a class="Inactive" href="#">Security</a> | 
+				<a class="Inactive" href="#">Terms and Conditions</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--**************************************************************
+ * Author: Cody Schneider
+ * Date: 10-19-2010
+***************************************************************--> 
+  <title>OAC Demo - Review Disclosures</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="lib/greybox.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<script src="lib/jquery.greybox.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="Header">
+			<p><a href="index.html"><img src="images/logoBank.png" alt="Bank Logo" /></a></p>
+			<div id="SecondaryNavigation">
+				<a href="#" class="chatLink Inactive">Chat online now</a> | 
+				<a class="Inactive" href="#">Bank Home</a> | 
+				<a class="Inactive" href="#">Help</a>
+				<h1>Online Banking</h1>
+			</div>
+		</div><!-- end #Header -->
+		<div id="Sidebar">
+			<div id="Navigation" class="Container">
+				<p>Applying for...</p>
+				<h2>Checking Account</h2>
+				<p><a class="Inactive" href="#">Learn More</a></p>
+				<hr/>
+				<ul>
+					<li class="complete"><a href="index.html">Get Started</a></li>
+					<li class="complete"><a href="PrimaryAccountHolder.html">Enter Your Information</a></li>
+					<li class="complete"><a href="AccountOptions.html">Select Options</a></li>
+					<li class="complete"><a href="Verification.html">Review Your Information</a></li>
+					<li class="active"><a href="Disclosures.html">Review Disclosures</a></li>
+					<li class=""><a href="InitialDeposit.html">Make a Deposit</a></li>
+					<li class=""><a href="Confirmation.html">Application Completed</a></li>
+				</ul>
+			</div>
+			<div id="Info" class="Container">
+				<h3>Need Help?</h3>
+				<p>Call (888) 123-4567</p>
+				<hr/>
+				<h3>FAQs</h3>
+				<p><a class="Inactive" href="#">Why do I need to review and accept disclosures?</a></p>
+				<hr/>
+				<p><a href="#" class="chatLink Inactive">Chat online now</a></p>
+			</div>
+			<div id="Security" class="Container">
+				<h3>Security</h3>
+				<hr/>
+				<p>We use the latest security technologies to ensure the safety of your personal information</p>
+				<p>Learn more about our <a class="Inactive" href="#">security features</a> and <a class="Inactive" href="#">privacy policy</a></p>
+				<p><a class="Inactive center" href="#"><img src="images/logoVerisign.png" alt="Verisign Secured" /></a></p>
+			</div>
+		</div><!-- end #Sidebar -->
+		
+		<div id="Content" class="Container">
+
+			<div class="intro section">
+				<h2>Review Disclosures</h2>
+				<p>Please review each of the disclosures listed below and indicate your acceptance by clicking the checkboxes. Disclosure information contains important terms and conditions that apply to your new account.</p>
+</div>	
+			<fieldset class="section">
+				<h2>Backup withholding</h2>
+				<p class="moMargin">
+          If you are subject to backup withholding. the I.R.S. has notified you. Most people are not subject to backup withholding. <a class="Inactive" href="#">What is backup withholding?</a></p>
+   				<table class="DynamicColumn">
+					<tr>
+						<td width="245"><p>Are you subject to backup withholding?</p></td>
+						<td width="242">
+							<input type="radio" id="BackupWithholdingNo" name="BackupWithholding" value="No" checked="checked" />
+							<label for="BackupWithholdingNo">No</label><br/>
+							<input type="radio" id="BackupWithholdingYes" name="BackupWithholding" value="Yes" />
+							<label for="BackupWithholdingYes">Yes</label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset class="section">
+				<h3>Deposit Account Agreement<a class="Inactive printBtn rightlink" href="#">Print</a></h3>
+				<div class="DisclosuresBox">
+					<h4>Deposit Account Agreement and Online Banking Disclosures</h4>
+					<p>
+						This Agreement ("Agreement") governs the use of The Bank of  Personal eBanking Services ("the Service") including the terms and conditions of the Bill Payment Service and is made and entered into by and between The Bank of  ("Bank") and each person who signs Bank's signature card for the Account, or is referenced on the Bank's records as an owner of the Account; or each party whose signature appears on a credit line application; or is referenced on Bank's records as an owner of the Account ("Customer") also referred to as ("you"). Each Customer is jointly and severally liable for all transactions initiated through the Service, including overdrafts, even if the Customer did not participate in the transaction, which resulted in the transaction.
+					</p><p>
+						The Service is accessed through a computer and modem to electronically connect with a database that allows you to view Account balance and transaction information, transfer funds among designated Accounts, pay bills from designated Accounts, send secure electronic mail to Bank and receive electronic mail from Bank, affect stop payments, view and print copies of checks, view and print statements, select statement delivery method, and reorder checks.
+					</p><p>
+						The terms and conditions of any deposit Account, rules and regulations, schedule, signature card, credit agreement, including any disclosures made pursuant to such agreements, or authority executed by or made available to Customer and any subsequent amendments to any of the foregoing, are incorporated herein by reference.  However, if there is any conflict or inconsistency between the terms and conditions stated in the other agreements and those of this Agreement, the terms and conditions of this Agreement shall control to the extent of such conflict or inconsistency. The terms and conditions of this agreement may be modified or amended by Bank upon written notice sent to you or by posting to the Web Site and sending you an Alert Notice or similar written notice thereof. Your continued use of the Service after such notification of change shall be understood as your agreement to be bound by all such changes.
+					</p><p>
+						The Electronic Funds Transfer Act governs some of the transactions permitted under this Agreement and some terms and conditions included in the Agreement are required by this Act.
+					</p>
+        </div>
+        <p><input type="checkbox" id="DisclosuresAgree" name="DisclosuresAgree" value="DisclosuresAgree" />
+      		<label for="DisclosuresAgree"><strong>I have read and agree to the Deposit Account Agreement and Online Banking Disclosures.</strong></label></p>
+			</fieldset>
+
+			<fieldset class="section">
+				<h3>Privacy Policy <a class="Inactive printBtn rightlink" href="#">Print</a></h3>
+        <div class="DisclosuresBox">
+        	<h4>Privacy Policy</h4>
+					<p>
+						This Agreement ("Agreement") governs the use of The Bank of  Personal eBanking Services ("the Service") including the terms and conditions of the Bill Payment Service and is made and entered into by and between The Bank of  ("Bank") and each person who signs Bank's signature card for the Account, or is referenced on the Bank's records as an owner of the Account; or each party whose signature appears on a credit line application; or is referenced on Bank's records as an owner of the Account ("Customer") also referred to as ("you"). Each Customer is jointly and severally liable for all transactions initiated through the Service, including overdrafts, even if the Customer did not participate in the transaction, which resulted in the transaction.
+					</p><p>
+						The Service is accessed through a computer and modem to electronically connect with a database that allows you to view Account balance and transaction information, transfer funds among designated Accounts, pay bills from designated Accounts, send secure electronic mail to Bank and receive electronic mail from Bank, affect stop payments, view and print copies of checks, view and print statements, select statement delivery method, and reorder checks.
+					</p><p>
+						The terms and conditions of any deposit Account, rules and regulations, schedule, signature card, credit agreement, including any disclosures made pursuant to such agreements, or authority executed by or made available to Customer and any subsequent amendments to any of the foregoing, are incorporated herein by reference.  However, if there is any conflict or inconsistency between the terms and conditions stated in the other agreements and those of this Agreement, the terms and conditions of this Agreement shall control to the extent of such conflict or inconsistency. The terms and conditions of this agreement may be modified or amended by Bank upon written notice sent to you or by posting to the Web Site and sending you an Alert Notice or similar written notice thereof. Your continued use of the Service after such notification of change shall be understood as your agreement to be bound by all such changes.
+					</p><p>
+						The Electronic Funds Transfer Act governs some of the transactions permitted under this Agreement and some terms and conditions included in the Agreement are required by this Act.
+					</p>
+    		</div>
+				<p><input type="checkbox" id="PrivacyPolicyAgree" name="PrivacyPolicyAgree" value="PrivacyPolicyAgree" />
+					<label for="PrivacyPolicyAgree"><strong>I have read and agree to the Privacy Policy.</strong></label></p>
+			</fieldset>
+
+			<fieldset class="section">
+				<h3>Rates Policy <a class="Inactive printBtn rightlink" href="#">Print</a></h3>
+        <div class="DisclosuresBox">
+        	<h4>Rates Policy</h4>
+					<p>
+						This Agreement ("Agreement") governs the use of The Bank of  Personal eBanking Services ("the Service") including the terms and conditions of the Bill Payment Service and is made and entered into by and between The Bank of  ("Bank") and each person who signs Bank's signature card for the Account, or is referenced on the Bank's records as an owner of the Account; or each party whose signature appears on a credit line application; or is referenced on Bank's records as an owner of the Account ("Customer") also referred to as ("you"). Each Customer is jointly and severally liable for all transactions initiated through the Service, including overdrafts, even if the Customer did not participate in the transaction, which resulted in the transaction.
+					</p><p>
+						The Service is accessed through a computer and modem to electronically connect with a database that allows you to view Account balance and transaction information, transfer funds among designated Accounts, pay bills from designated Accounts, send secure electronic mail to Bank and receive electronic mail from Bank, affect stop payments, view and print copies of checks, view and print statements, select statement delivery method, and reorder checks.
+					</p><p>
+						The terms and conditions of any deposit Account, rules and regulations, schedule, signature card, credit agreement, including any disclosures made pursuant to such agreements, or authority executed by or made available to Customer and any subsequent amendments to any of the foregoing, are incorporated herein by reference.  However, if there is any conflict or inconsistency between the terms and conditions stated in the other agreements and those of this Agreement, the terms and conditions of this Agreement shall control to the extent of such conflict or inconsistency. The terms and conditions of this agreement may be modified or amended by Bank upon written notice sent to you or by posting to the Web Site and sending you an Alert Notice or similar written notice thereof. Your continued use of the Service after such notification of change shall be understood as your agreement to be bound by all such changes.
+					</p><p>
+						The Electronic Funds Transfer Act governs some of the transactions permitted under this Agreement and some terms and conditions included in the Agreement are required by this Act.
+					</p>
+    		</div>
+        <p><input type="checkbox" id="RatesPolicyAgree" name="RatesPolicyAgree" value="RatesPolicyAgree" />
+        	<label for="RatesPolicyAgree"><strong>I have read and agree to the Rates Policy.</strong></label></p>
+			</fieldset>
+            
+			<a class="btnContinue" href="ProcessingApplication.html"><img src="images/btnContinue.png" alt="Continue" /></a>
+		</div><!-- end #Content -->
+		<div class="clear"></div>
+		<div id="Footer">
+			<p>
+				<a class="Inactive" href="#">Privacy</a> | 
+				<a class="Inactive" href="#">Security</a> | 
+				<a class="Inactive" href="#">Terms and Conditions</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

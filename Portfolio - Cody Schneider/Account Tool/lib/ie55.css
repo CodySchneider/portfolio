@@ -1,0 +1,25 @@
+.header {
+	background:url(../img/ie_bg_head_right.png) no-repeat right top;	
+}
+
+.header h1 {
+	background:url(../img/ie_bg_head_left.png) no-repeat left top;
+	padding-top:25px;
+}
+
+.body {
+	background:url(../img/ie_bg_body_right.png) repeat-y right;
+}
+.bg-outer {
+	background:url(../img/ie_bg_body_left.png) repeat-y left;
+	height: expression( this.scrollHeight < 226 ? "225px" : "auto" ); /* sets min-height for IE */
+}
+
+.bg-inner {
+	background:none;
+}
+.wrapper {
+	background:none;
+}
+
+

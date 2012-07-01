@@ -1,0 +1,78 @@
+#GB_overlay {
+  background-image: url('images/overlay.png'); 
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width:  100%;
+  height: 100%;
+}
+
+* html #GB_overlay {
+  background-color: #000;
+  background-color: transparent;
+  background-image: url('images/blank.gif');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="./images/overlay.png", sizingMethod="scale");
+}
+
+#GB_window {
+  top: 10%;
+  left: 0px;
+  position: absolute;
+  background: #FFF;
+  border: 1px solid #000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(lib/PIE.htc);
+  overflow: auto;
+  width: 400px;
+  height: 400px;
+  z-index: 1001;
+}
+
+#GB_frame {
+  border: 0;
+  width: 100%;
+	text-align:left;
+}
+
+#GB_frame p {
+	margin:20px 20px 10px 20px;
+	font: 500 12px 'Arial';
+	text-transform:none; 	
+}
+
+.continue {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+
+#GB_caption {
+	height:20px;
+	border-bottom:1px solid #000;
+  background:#102264;
+  padding: 2px 0 2px 0px;
+  margin: 0;
+  text-align: left;
+	width:100%;
+	text-indent:20px;
+	line-height:20px;
+	font-weight:bold;
+	color: white;
+	font-size: 1em;
+}
+
+#GB_window .cancel
+{
+    background: url(images/disclosureClose.png) no-repeat;
+  position: absolute;
+  height:18px;
+  width:18px;
+  top: 3px;
+  right: 5px;
+  cursor: pointer;
+  
+}

@@ -25,6 +25,7 @@
   <!-- CSS concatenated and minified via ant build script-->
   <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Chau+Philomene+One:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mb.container.css">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -36,14 +37,39 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '217714571651518', // App ID
+      channelUrl : '//localhost/portfolio/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
 
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
   <div id="container">
     <header>
 		<section>
-			<h1>The Web Wizard: AJAX Alchemy, CSS Conjuration, HTML Hocus Pocus</h1>
+			<a href="#" id="login">Login</a>
+			<h1>The Web Wizard</h1>
+			<h2>AJAX Alchemy, CSS Conjuration, &amp; HTML Hocus Pocus</h2>
 		</section>
     </header>
     <div id="main" role="main">
+    	<div id="photoShuffle" class="clearfix"></div>
     	<section>
     		<h2>Awesome Heading Here</h2>
 			<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
@@ -51,6 +77,12 @@
 			<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.  </p>
 			
 			<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+    	</section>
+    	<section>
+    		<h2>Website Statistics</h2>
+			<p>Fonts Used:</p>
+			<p>Page Weight:</p>
+			<p>HTTP Requests:</p>
     	</section>
 
     </div>
@@ -69,7 +101,11 @@
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mb.container.js"></script>
+
   <script defer src="js/script.js"></script>
+
   <!-- end scripts-->
 
 	

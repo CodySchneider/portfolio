@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--**************************************************************
+ * Author: Cody Schneider
+ * Date: 10-19-2010
+***************************************************************--> 
+  <title>OAC Demo - Add Features</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="lib/greybox.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<script src="lib/jquery.greybox.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="Header">
+			<p><a href="index.html"><img src="images/logoBank.png" alt="Bank Logo" /></a></p>
+			<div id="SecondaryNavigation">
+				<a href="#" class="chatLink Inactive">Chat online now</a> | 
+				<a class="Inactive" href="#">Bank Home</a> | 
+				<a class="Inactive" href="#">Help</a>
+				<h1>Online Banking</h1>
+			</div>
+		</div><!-- end #Header -->
+		<div id="Sidebar">
+			<div id="Navigation" class="Container">
+				<p>You are applying for...</p>
+				<h2>Checking Account</h2>
+				<p><a class="Inactive" href="#">Learn more</a></p>
+				<hr/>
+				<ul>
+					<li class="complete"><a href="index.html">Get Started</a></li>
+					<li class="complete"><a href="PrimaryAccountHolder.html">Enter Your Information</a></li>
+					<li class="active"><a href="AccountOptions.html">Select Options</a></li>
+					<li class=""><a href="Verification.html">Review Your Information</a></li>
+					<li class=""><a href="Disclosures.html">Review Disclosures</a></li>
+					<li class=""><a href="InitialDeposit.html">Make a Deposit</a></li>
+					<li class=""><a href="Confirmation.html">Application Completed</a></li>
+				</ul>
+			</div>
+			<div id="Info" class="Container">
+				<h3>Need Help?</h3>
+				<p>Call (888) 123-4567</p>
+				<hr/>
+				
+				<p><a href="#" class="chatLink Inactive">Chat online now</a></p>
+			</div>
+			<div id="Security" class="Container">
+				<h3>Security</h3>
+				<hr/>
+				<p>We use the latest security technologies to ensure the safety of your personal information</p>
+				<p>Learn more about our <a class="Inactive" href="#">security features</a> and <a class="Inactive" href="#">privacy policy</a></p>
+				<p><a class="Inactive center" href="#"><img src="images/logoVerisign.png" alt="Verisign Secured" /></a></p>
+			</div>
+		</div><!-- end #Sidebar -->
+		
+		<div id="Content" class="Container">
+        
+
+			<div class="intro section">
+				<h2>Select Options</h2>
+				<p class="moMargin">To get the most out of your new account, select from the following options.</p>
+			</div>
+
+			<fieldset class="section">
+				<h2>Checking Account</h2>
+				
+				<table class="DynamicColumn">
+					<tr>
+						<td><p>Would you like checks for this account?</p></td>
+						<td>
+							<input type="radio" id="SavAcctChkNo" name="SavAcctChk" value="No" checked="checked" />
+							<label for="SavAcctChkNo"><strong>No</strong></label><br/>
+							<input type="radio" id="SavAcctChkYes" name="SavAcctChk" value="Yes" />
+							<label for="SavAcctChkYes"><strong>Yes</strong></label>
+						</td>
+					</tr>
+					<tr>
+						<td><p>Would you like an ATM card for this account?</p></td>
+						<td>
+							<input class="dynType2" type="radio" id="SavAcctAtmNo" name="SavAcctAtm" value="0" checked="checked" />
+							<label for="SavAcctAtmNo"><strong>No</strong> </label><br/>
+							<input class="dynType2" type="radio" id="SavAcctAtmYes" name="SavAcctAtm" value="1" />
+							<label for="SavAcctAtmYes"><strong>Yes</strong></label>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset class="section option">
+				<h2>Overdraft protection plan</h2>
+				<p>Enrolling in the Overdraft Protection Plan is free and provides protection from overdraft fees and declined transactions.</p>
+				<table class="DynamicColumn">
+					<tr>
+						<td><input type="radio" id="CheckCardPlanWant" name="CheckCardAssurancePlan" value="Want" checked="checked" /></td>
+						<td>
+							<label for="CheckCardPlanWant">Yes, Enroll me in the Overdraft Protection Plan.</label><br />
+              <input type="checkbox" id="AssurancePlanConcent" name="AssurancePlanConcent" value="AssurancePlanConcent" />
+              <label for="AssurancePlanConcent"><strong>I have read and agree to the</strong> <a class="Inactive" href="#">Overdraft Protection Plan Terms and Conditions</a>. </label>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" id="CheckCardPlanDoNotWant" name="CheckCardAssurancePlan" value="Do Not Want" /></td>
+						<td><label for="CheckCardPlanDoNotWant">No thank you.</label></td>
+					</tr>
+				</table>
+			</fieldset>
+			
+								
+			
+				</table>
+			</fieldset>
+
+			<a class="btnContinue" href="Verification.html"><img src="images/btnContinue.png" alt="Continue" /></a>
+		</div><!-- end #Content -->
+		<div class="clear"></div>
+		<div id="Footer">
+			<p>
+				<a class="Inactive" href="#">Privacy</a> | 
+				<a class="Inactive" href="#">Security</a> | 
+				<a class="Inactive" href="#">Terms and Conditions</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

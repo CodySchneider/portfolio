@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Try Mobile Banking today!</title>
+	<link href="lib/main.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Update your FIORG and ABA numbers in the URL parameters for this script -->
+	<script type="text/javascript" src="https://cibng.ibanking-services.com/cib/CEBMainServlet/SplashPageScript?FIORG=000&FIFID=000000000"></script>
+
+	<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.cycle.lite.1.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Additional seetings can be found at the jQuery Cycle plugin homepage: http://jquery.malsup.com/cycle/lite/
+			$('#Rotator').cycle({ 
+			    timeout:  2000, //Milliseconds between transisitons 
+			    speed:  1000 		//Transition speed
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="Content">
+		<div id="iPhone">
+			<div id="Rotator">
+				<img src="images/ssLogin.jpg" alt="Login Screenshot" />
+				<img src="images/ssSummary.jpg" alt="Account Summary Screenshot" />
+				<img src="images/ssBillpay.jpg" alt="Billpay Screenshot" />
+				<img src="images/ssTransfer.jpg" alt="Transfer Screenshot" />
+			</div>
+			
+			<!-- Swap this image with your own transparent PNG or GIF. Dimensions should be 140w x 24h pixels -->
+			<img id="logo" src="images/logo.png" alt="Bank Logo" />
+		
+		</div>
+		<div id="Text">
+			<h1>New Mobile Banking</h1>
+			<p>Enroll in Mobile Banking today and enjoy the freedom of having access to your accounts anytime/anywhere.</p>
+			<p>Featuring:</p>
+			<ul>
+				<li>Check balances and transaction history </li>
+				<li>Transfer funds between eligible accounts</li>
+				<li>Search for branch locations</li>
+			</ul>
+			<p>All mobile phones supported including iPhone, Blackberry and Android.</p>
+			<div id="Controls">
+				<!-- Update your Mobile Banking enrollment link here -->
+				<a id="btnEnroll" class="btn" href="https://www.consumermobileaccess.com/cma/main/testbank">Enroll</a>
+				<a id="btnContinue" class="btn" href="#" onclick="goToAccountsOverview(); return false;">
+					Continue to Online Banking</a>
+				<div class="clear">&nbsp;</div>
+			</div>
+		</div>
+		<p id="btnLogout"><a href="#" onclick="goToLogout(); return false;">Logout</a></p>
+	</div>
+</body>
+</html>

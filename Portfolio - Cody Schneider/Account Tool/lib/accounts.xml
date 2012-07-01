@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<id>Bank ID</id>
+	<source>Branch ID</source>
+	<modified>01-19-2009</modified>
+
+<!-- ***************** Checking Accounts ***************** -->	
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Simple Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>0</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>none</interest>
+			<overdraft fee='true'>true</overdraft>
+			<checks fee='true' freeChecks='0' limit='10'>true</checks>
+			<debit fee='true' cashback='false'>true
+				<fees monthly='0' yearly='10.00' transaction='1.00' />
+			</debit>
+			<checkCard fee='true' cashback='0'>true
+				<fees monthly='0' yearly='10.00' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='true'>true</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Regular Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>100</minDeposit>
+			<minBalance weight='3'>200</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='3.00' yearly='0' waived='Direct Deposit' />
+		<features weight='1'>
+			<interest weight='1'>none</interest>
+			<overdraft fee='false'>true</overdraft>
+			<checks fee='true' freeChecks='1' limit='20'>true</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='true'>true</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Advantage Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>500</minDeposit>
+			<minBalance weight='3'>500</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='5.00' yearly='0' waived='Direct Deposit' />
+		<features weight='1'>
+			<interest weight='1'>lowest</interest>
+			<overdraft fee='false'>true</overdraft>
+			<checks fee='false' freeChecks='1' limit='0'>true</checks>
+			<debit fee='true' cashback='10.00'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='true'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>true</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Premium Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='3'>1000</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='7.00' yearly='0' waived='Direct Deposit' />
+		<features weight='1'>
+			<interest weight='1'>low</interest>
+			<overdraft fee='false'>true</overdraft>
+			<checks fee='false' freeChecks='1' limit='0'>true</checks>
+			<debit fee='false' cashback='20.00'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='true'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>true</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Senior Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>55</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>100</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>lowest</interest>
+			<overdraft fee='false'>true</overdraft>
+			<checks fee='false' freeChecks='1' limit='0'>true</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='true' cashback='true'>true
+				<fees monthly='0' yearly='10.00' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>true</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>checking</type>
+		<name>Student Checking</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>yes</student>
+			<minDeposit weight='2'>100</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>none</interest>
+			<overdraft fee='true'>true</overdraft>
+			<checks fee='true' freeChecks='0' limit='10'>true</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='true'>true</billpay>
+		</features>
+	</account>
+
+<!-- ***************** Savings Accounts ***************** -->
+	<account>
+		<type weight='3' category='personal'>savings</type>
+		<name>Simple Savings</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>50</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>lowest</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='10.00' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>savings</type>
+		<name>Regular Savings</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>200</minDeposit>
+			<minBalance weight='3'>50</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='3.00' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>low</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>savings</type>
+		<name>Premium Savings</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='3'>500</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='5.00' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>low</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='10.00'>true
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>savings</type>
+		<name>Senior Savings</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>55</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>200</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>low</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>savings</type>
+		<name>Minor Savings</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>0</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1</minDeposit>
+			<minBalance weight='3'>0</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>low</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+<!-- ***************** Money Market Accounts ***************** -->
+	<account>
+		<type weight='3' category='personal'>money</type>
+		<name>Regular Money Market</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='3'>1000</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='7.00' yearly='5.00' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>medium</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='true' freeChecks='0' limit='10'>true</checks>
+			<debit fee='true' cashback='0'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>money</type>
+		<name>Advantage Money Market</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>5000</minDeposit>
+			<minBalance weight='3'>5000</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='10.00' yearly='15.00' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>high</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='true' freeChecks='0' limit='10'>true</checks>
+			<debit fee='true' cashback='10.00'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+
+	<account>
+		<type weight='3' category='personal'>money</type>
+		<name>Premium Money Market</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>10000</minDeposit>
+			<minBalance weight='3'>10000</minBalance>
+			<term weight='1'>0</term>
+		</requirements>
+		<maintFee weight='1' value='true' monthly='25.00' yearly='30.00' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>higher</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='true' freeChecks='0' limit='10'>true</checks>
+			<debit fee='true' cashback='20.00'>true
+				<fees monthly='0' yearly='0' transaction='1.00' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='true'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+	
+<!-- ***************** CD Accounts ***************** -->
+	<account>
+		<type weight='3' category='personal'>cd</type>
+		<name>Liquid CD</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>10000</minDeposit>
+			<minBalance weight='3'>10000</minBalance>
+			<term weight='1'>1</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>medium</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='false'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='3' category='personal'>cd</type>
+		<name>Short-Term CD</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>5000</minDeposit>
+			<minBalance weight='3'>5000</minBalance>
+			<term weight='1'>3</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>medium</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='false'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='3' category='personal'>cd</type>
+		<name>Mid-Term CD</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='3'>1000</minBalance>
+			<term weight='1'>6</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>high</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='false'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='3' category='personal'>cd</type>
+		<name>Investment CD</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='3'>1000</minBalance>
+			<term weight='1'>12</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>higher</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='false'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+	
+	<account>
+		<type weight='2' category='personal'>cd</type>
+		<name>Long-Term Investment CD</name>
+		<prodid>#</prodid>
+		<requirements>
+			<age weight='1'>18</age>
+			<student weight='1'>no</student>
+			<minDeposit weight='2'>1000</minDeposit>
+			<minBalance weight='1.5'>1000</minBalance>
+			<term weight='1'>24</term>
+		</requirements>
+		<maintFee weight='1' value='false' monthly='0' yearly='0' waived='false' />
+		<features weight='1'>
+			<interest weight='1'>highest</interest>
+			<overdraft fee='false'>false</overdraft>
+			<checks fee='false' freeChecks='0' limit='0'>false</checks>
+			<debit fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</debit>
+			<checkCard fee='false' cashback='0'>false
+				<fees monthly='0' yearly='0' transaction='0' />
+			</checkCard>
+			<ebanking fee='false' transfer='false'>true</ebanking>
+			<billpay fee='false'>false</billpay>
+		</features>
+	</account>
+</xml>

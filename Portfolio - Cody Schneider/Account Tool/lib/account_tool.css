@@ -1,0 +1,276 @@
+/****************** Main DIV Dimensions & Positioning ******************/
+#account_tool {
+	position:relative;
+	width:70%;
+	top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+
+#account_tool .page {
+	max-width:620px;
+	min-width:490px;
+	height:345px; /* Needed for IE 6 */
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:2;
+}
+
+#account_tool #results.page {
+	width:80%;
+	height:345px; /* Needed for IE 6 */
+	z-index:1;
+}
+
+#account_tool .splash {
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+#account_tool .logo {
+	position:absolute;
+	bottom:20px;
+	left:30px;
+}
+/****************** Container Backgrounds & Padding ******************/
+#account_tool .header {
+	background:url(../img/bg_head_right.png) no-repeat right top;
+	margin-left:35px;
+}
+
+#account_tool .header h1 {
+	background:url(../img/bg_head_left.png) no-repeat left top;
+	height:50px;
+	padding:30px 10px 0 20px;
+	margin-left:-35px;
+}
+
+#account_tool .body {
+	background:#FFFFFF url(../img/bg_body_right.png) no-repeat right top;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+#account_tool .bg-outer {
+	background:url(../img/bg_body_left.png) no-repeat left top;
+	margin-left:-10px;	
+}
+
+#account_tool .bg-inner {
+	background:url(../img/frame_right.png) repeat-y right;
+	margin-right:-10px;
+}
+
+#account_tool .wrapper {
+	background:url(../img/frame_left.png) repeat-y left;
+	min-height:225px; /* Needs to match .bg-outer height hack in ie55.css */
+	padding:0 15px 0 20px;
+}
+
+#account_tool .footer {
+	background:url(../img/bg_foot_right.png) no-repeat right top;
+	margin-left:35px;
+}
+
+#account_tool .footer p {
+	background:url(../img/bg_foot_left.png) no-repeat left top;
+	height:40px;
+	margin-left:-35px;
+}
+
+#account_tool #results .header {
+	background:url(../img/result_bg_head_right.png) no-repeat right top;	
+}
+
+#account_tool #results .header h1 {
+	background:url(../img/result_bg_head_left.png) no-repeat left top;
+	height:50px;
+	padding:30px 10px 0 20px;
+}
+
+#account_tool #results .body {
+	background:#FFFFFF url(../img/result_bg_body_right.png) no-repeat right top;
+}
+
+#account_tool #results .bg-outer {
+	background:url(../img/result_bg_body_left.png) no-repeat left top;
+}
+
+/****************** sIFR Styles ******************/
+#account_tool .sifr span.sIFR-jquery {
+	letter-spacing:-0.1em; /* Match HTML text to sIFR text */
+}
+
+#account_tool h1.sifr span.sIFR-jquery {
+	font-size:20pt;
+	color:#990000;
+}
+#account_tool h2.sifr span.sIFR-jquery {
+	font-size:18pt;
+	color:#990000;
+}
+#account_tool h1.sifr {
+	font-size:1.4em;
+	color:#990000;
+}
+
+#account_tool h2.sifr {
+	font-size:1.2em;
+	color:#000000;
+	padding:0 10px 5px 40px;
+}
+
+/****************** Nav Button Styles ******************/
+#account_tool .next {
+	position:absolute;
+	bottom:50px;
+	left:200px;
+	height:55px;
+	width:160px;
+	background:url(../img/next.png) no-repeat;
+}
+
+#account_tool .back {
+	position:absolute;
+	bottom:50px;
+	left:70px;
+	height:55px;
+	width:160px;
+	background:url(../img/back.png) no-repeat;
+}
+
+#account_tool .next:hover {
+	cursor:pointer;
+}
+
+#account_tool .back:hover {
+	cursor:pointer;
+}
+
+#account_tool #page1 .next {
+	background:url(../img/start.png) no-repeat;
+	bottom:120px;
+	left:40px;
+}
+
+/****************** Page Specific Styles ******************/
+#account_tool #page1 .splash {
+	background:url(../img/treasure_chest.png) no-repeat;
+	width:304px;
+	height:215px;
+}
+
+#account_tool #page2 .splash {
+	background:url(../img/smiling_woman.png) no-repeat;
+	width:175px;
+	height:215px;
+}
+
+#account_tool #page3 .splash {
+	background:url(../img/money_jar.png) no-repeat;
+	width:155px;
+	height:215px;
+}
+
+#account_tool #page4 .splash {
+	background:url(../img/professional_piggy.png) no-repeat;
+	width:155px;
+	height:215px;
+}
+
+#account_tool fieldset li {
+	margin-bottom:20px;
+}
+
+#account_tool fieldset p {
+	margin-bottom:10px;
+}
+
+#account_tool .checkboxes {
+	width:345px;
+	display:block;
+}
+
+#account_tool .checkboxes span {
+	width:115px;
+	display:block;
+	float:left;
+}
+/****************** Account Results Styles ******************/
+#account_tool .activateAll {
+	color:gray;
+	text-align:center;
+	padding:10px;
+}
+
+#account_tool .activateAll span {
+	margin-right:20px;
+	cursor:pointer;
+}
+
+#account_tool .accountHead {
+	padding:5px 0;
+}
+
+#account_tool .product h3 {
+	float:left;
+}
+
+#account_tool .score {
+	float:right;
+	color:blue;
+}
+
+#account_tool .showHide {
+	float:left;
+	color:gray;
+	margin-right:10px;
+}
+
+#account_tool .feature_tbl {
+	margin:5px auto 5px auto;
+	color:#333333;
+	width:360px;
+}
+
+#account_tool .feature_tbl .even {
+	background-color:#A7C1DF;
+	color:white;
+}
+
+#account_tool .feature_tbl .odd {
+	background-color:white;
+}
+
+#account_tool .feature_tbl td {
+	border:1px solid black;
+	padding:2px 15px;
+}
+
+#account_tool .detail,#account_tool  .hideButton {
+	display:none;
+}
+
+/****************** Layout Class Styles ******************/
+#account_tool .hidden {
+	position:absolute;
+	left:-5000px;
+}
+
+#account_tool .clear {
+	clear:both;
+}
+
+#account_tool .indent {
+	margin-left:120px;
+}
+
+#account_tool .center {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

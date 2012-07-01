@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--**************************************************************
+ * Author: Cody Schneider
+ * Date: 10-19-2010
+***************************************************************--> 
+  <title>OAC Demo - Enter Your Information</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="lib/greybox.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<script src="lib/jquery.greybox.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="Header">
+			<p><a href="index.html"><img src="images/logoBank.png" alt="Bank Logo" /></a></p>
+			<div id="SecondaryNavigation">
+				<a href="#" class="chatLink Inactive">Chat online now</a> | 
+				<a class="Inactive" href="#">Bank Home</a> | 
+				<a class="Inactive" href="#">Help</a>
+				<h1>Online Banking</h1>
+			</div>
+		</div><!-- end #Header -->
+		<div id="Sidebar">
+			<div id="Navigation" class="Container">
+				<p>You are applying for...</p>
+				<h2>Checking Account</h2>
+				<p><a class="Inactive" href="#">Learn more</a></p>
+				<hr/>
+				<ul>
+					<li class="complete"><a href="index.html">Get Started</a></li>
+					<li class="active"><a href="PrimaryAccountHolder.html">Enter Your Information</a></li>
+					<li class=""><a href="AccountOptions.html">Select Options</a></li>
+					<li class=""><a href="Verification.html">Review Your Information</a></li>
+					<li class=""><a href="Disclosures.html">Review Disclosures</a></li>
+					<li class=""><a href="InitialDeposit.html">Make a Deposit</a></li>
+					<li class=""><a href="Confirmation.html">Application Completed</a></li>
+				</ul>
+			</div>
+			<div id="Info" class="Container">
+				<h3>Need Help?</h3>
+				<p>Call (888) 123-4567</p>
+				<hr/>
+				<h3>FAQs</h3>
+				<p><a class="Inactive" href="#">How is my personal information used?</a></p>
+				
+				<hr/>
+				<p><a href="#" class="chatLink Inactive">Chat online now</a></p>
+			</div>
+			<div id="Security" class="Container">
+				<h3>Security</h3>
+				<hr/>
+				<p>We use the latest security technologies to ensure the safety of your personal information</p>
+				<p>Learn more about our <a class="Inactive" href="#">security features</a> and <a class="Inactive" href="#">privacy policy</a></p>
+				<p><a class="Inactive center" href="#"><img src="images/logoVerisign.png" alt="Verisign Secured" /></a></p>
+			</div>
+		</div><!-- end #Sidebar -->
+			<div id="Content" class="Container">
+
+
+			<div class="intro section">
+				<h2>Enter Your Information</h2>
+				<p class="moMargin">Enter information for the primary account owner.</p>
+			</div>
+
+
+
+<div class="section">
+				<h2>Important information</h2>
+				<p>To help the government fight the funding of terrorism and money laundering activities, Federal law
+				requires all financial institutions to obtain, verify, and record information that identifies each person
+				who opens an account.</p>
+				<p>When you open an account we will ask your name, date of birth, and other information that will
+				allow us to identify you. We may also ask to see your driver's license or other identifying documents.</p>
+			</div>
+
+
+			<fieldset class="section">
+        <h2>Personal information</h2>
+        <table class="Standard">
+       
+        
+        
+					<tr>
+						<td><label for="FirstName">First name:</label></td>
+						<td><input type="text" id="FirstName" name="FirstName"/></td>
+					</tr>
+					<tr>
+						<td><label for="MiddleInitial">Middle initial (optional):</label></td>
+						<td><input type="text" id="MiddleInitial" name="MiddleInitial" size="2" maxlength="1"/></td>
+					</tr>
+					<tr>
+						<td><label for="LastName">Last name:</label></td>
+						<td><input type="text" id="LastName" name="LastName"/></td>
+					</tr>
+					<tr>
+						<td><label for="Suffix">Suffix (optional):</label></td>
+						<td>
+							<select id="Suffix" name="Suffix">
+								<option></option>
+								<option>Mr.</option>
+								<option>Mrs.</option>
+								<option>Jr.</option>
+                                <option>Sr.</option>
+							</select>
+						</td>
+					</tr>
+                    <tr>
+						<td><p>&nbsp;</p></td>
+                        <td><p>&nbsp;</p></td>
+					</tr>
+                    
+                    
+                    
+                    
+					<tr>
+						<td><label for="DOBM">Date of birth:</label></td>
+						<td>
+							<input type="text" id="DOBM" name="DOBM" size="4" maxlength="2" /> / 
+							<input type="text" id="DOBD" name="DOBD" size="4" maxlength="2" /> / 
+							<input type="text" id="DOBY" name="DOBY" size="4" maxlength="4" />
+							<p class="info">(mm/dd/yyyy)</p>
+						</td>
+					</tr>
+					
+						<td><label for="SSN1">Social Security number:</label></td>
+						<td>
+							<input type="text" id="SSN1" name="SSN1" size="4" maxlength="3" /> - 
+							<input type="text" id="SSN2" name="SSN2" size="4" maxlength="2" /> - 
+							<input type="text" id="SSN3" name="SSN3" size="4" maxlength="4" />
+						</td>
+					</tr>
+                    
+                  <tr>
+						<td><p>&nbsp;</p></td>
+                        <td><p>&nbsp;</p></td>
+					</tr>  
+                    
+                    
+          <tr>
+            <td>
+              <label for="HomePhone1">Home phone:</label>
+            </td>
+            <td>
+              ( <input type="text" id="HomePhone1" name="HomePhone1" size="4" maxlength="3" /> )
+              <input type="text" id="HomePhone2" name="HomePhone2" size="4" maxlength="3" /> -
+              <input type="text" id="HomePhone3" name="HomePhone3" size="4" maxlength="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="WorkPhone1">Work phone (optional):</label>
+            </td>
+            <td>
+              ( <input type="text" id="WorkPhone1" name="WorkPhone1" size="4" maxlength="3" /> )
+              <input type="text" id="WorkPhone2" name="WorkPhone2" size="4" maxlength="3" /> -
+              <input type="text" id="WorkPhone3" name="WorkPhone3" size="4" maxlength="4" />
+            </td>
+          </tr>
+					
+				</table>
+			</fieldset>
+			
+			<fieldset class="section">
+				<h2>E-mail address</h2>
+				<p>We will use this e-mail address to communicate with you regarding your new account.</p>
+				<table class="Standard">
+					
+					</tr>
+                    
+                    <tr>
+						<td><label for="email1">E-mail address:</label></td>
+						<td><input type="text" id="email1" name="email1"/></td>
+					</tr>
+					<tr>
+						<td><label for="email2">Re-enter e-mail address:</label></td>
+						<td><input type="text" id="email2" name="email2"/></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset class="section">
+				<h2>ID information</h2>
+				<p>We will use this information to confirm your identity.</p>
+				<table class="Standard">
+					<tr>
+						<td><label for="IdentType">ID type:</label></td>
+						<td>
+							<select class="dynType1" id="IdentType" name="IdentType">
+								<option value="0"></option>
+								<option value="1">Drivers license</option>
+								<option value="1">State ID</option>
+                <option value="0">I do not have one</option>
+							</select>
+						</td>
+          </tr>
+         <!--- <tr class="option">
+              <td><label for="Identification">ID number:</label></td>
+              <td><input type="text" id="Identification" name="Identification"/></td>
+          </tr>
+          <tr class="option">   
+						<td><label for="StateIssue">State of issue:</label></td>
+						<td>
+              <select id="StateIssue" name="StateIssue">
+                  <option value=""></option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+              </select> 
+						</td>                                             
+					</tr>
+					<tr class="option">
+						<td><label for="IssueDate">Issue date:</label></td>
+						<td>
+							<input type="text" id="IssueDateM" name="IssueDateM" size="4" maxlength="2" /> / 
+							<input type="text" id="IssueDateD" name="IssueDateD" size="4" maxlength="2" /> / 
+							<input type="text" id="IssueDateY" name="IssueDateY" size="4" maxlength="4" />
+							<p class="info">(mm/dd/yyyy)</p>
+						</td>
+					</tr>
+					<tr class="option">
+						<td><label for="ExpireDate">Expiration date:</label></td>
+						<td>
+							<input type="text" id="ExpireDateM" name="ExpireDateM" size="4" maxlength="2" /> / 
+							<input type="text" id="ExpireDateD" name="ExpireDateD" size="4" maxlength="2" /> / 
+							<input type="text" id="ExpireDateY" name="ExpireDateY" size="4" maxlength="4" />
+							<p class="info">(mm/dd/yyyy)</p>
+						</td>
+					</tr> --->
+				</table>
+			</fieldset>
+
+			<fieldset class="section">
+				<h2>Employment information</h2>
+				<p>If necessary, we will use this information to confirm your employment. </p>
+				<table class="Standard">
+					<tr>
+						<td><label for="EmployStatus">Employment status:</label></td>
+						<td>
+							<select class="dynType1" id="EmployStatus" name="EmployStatus">
+								<option value="0"></option>
+								<option value="0">Unemployed</option>
+								<option value="1">Part-time</option>
+                <option value="1">Full-time</option>
+                <option value="0">Retired</option>
+							</select>
+						</td>
+					</tr> 
+        <!---  <tr class="option">
+            <td><label for="EmployerName">Employer name:</label></td>
+            <td><input type="text" id="EmployerName" name="EmployerName"/></td>
+          </tr>
+         <tr class="option">   
+						<td><label for="EmployerCitySt">Employer city &amp; state:</label></td>
+            <td><input type="text" id="EmployerCity" name="EmployerCity"/> ,
+                <select id="EmployerState" name="EmployerState">
+                    <option value=""></option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select> 
+						</td>                                             
+					</tr>
+					<tr class="option">
+						<td><label for="EmployerPhone">Employer phone:</label></td>
+						<td>
+							( <input type="text" id="EmployerPhone1" name="EmployerPhone1" size="4" maxlength="3" /> )
+							<input type="text" id="EmployerPhone2" name="EmployerPhone2" size="4" maxlength="3" /> - 
+							<input type="text" id="EmployerPhone3" name="EmployerPhone3" size="4" maxlength="4" />
+						</td>
+					</tr>
+					<tr class="option">
+						<td><label for="OccupationDesc">Occupation:</label></td>
+						<td><input type="text" id="OccupationDesc" name="OccupationDesc"/></td>
+					</tr> --->
+				</table>
+			</fieldset>
+			
+			
+
+			<a class="btnContinue" href="PrimaryAccountHolderPage2.html"><img src="images/btnContinue.png" alt="Continue" /></a>
+		</div><!-- end #Content -->
+		<div class="clear"></div>
+		<div id="Footer">
+			<p>
+				<a class="Inactive" href="#">Privacy</a> | 
+				<a class="Inactive" href="#">Security</a> | 
+				<a class="Inactive" href="#">Terms and Conditions</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

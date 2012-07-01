@@ -1,0 +1,269 @@
+/******************************************************** Normalize Styles ****************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, hr,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight:normal;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************************************************** Default HTML Styles ****************/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+h1 {
+	color:#101836;
+	font-weight:bold;
+	text-align:right;
+	font-size:15px;
+}
+h2, h3 {
+	color:#1666B7;
+	font-weight:bold;
+}
+h2 {
+	font-size:16px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0;
+}
+h3 {line-height:17px;}
+p, ul {
+	line-height:1.2em;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+strong {
+	font-weight:bold;
+}
+hr {
+	height:1px;
+	border-bottom:1px solid #CCC;
+	margin:10px 0;
+}
+a {
+	color:#1666B7;
+}
+/******************************************************** Main Layout Styles ****************/
+#pageContainer {
+	width:996px;
+	margin:10px auto;
+}
+#Header {
+	position:relative;
+	height:80px;
+}
+#SecondaryNavigation {
+	display:none;
+	position:absolute;
+	right:0;
+	top:0;
+}
+#SecondaryNavigation a {
+	color:#101836;
+	text-decoration:none;
+}
+#Sidebar {
+	width:174px;
+	float:left;
+}
+#Content {
+	width:560px;
+	float:left;
+	padding:30px 230px 30px 20px;
+	margin:0 0 0 10px;
+}
+.Container {
+	border:1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin:0 0 15px 0;
+	behavior: url(lib/PIE.htc);
+}
+#Sidebar .Container {
+	padding:7px;
+}
+#Navigation.Container, #Content.Container {
+	background:url(../images/bgContainer.png) repeat-x;
+}
+
+/******************************************************** Sidebar Styles ****************/
+#Navigation ul {
+	padding:0 0 0 20px;
+}
+#Navigation ul a {
+	color:#A4A3A3;
+	text-decoration:none;
+	cursor:default;
+}
+#Navigation .complete a {
+	color:#4A4A4A;
+	font-weight:bold;
+}
+#Navigation .active {
+	list-style:url(../images/arrow.png);
+}
+#Navigation .active a {
+	color:#1666B7;
+	font-weight:bold;
+}
+#Info a {
+	color:Black;
+	text-decoration:none;
+}
+#Info .chatLink {
+	margin-left:20px;
+}
+#Security h3 {
+	text-align:left;
+}
+/******************************************************** Content Styles ****************/
+.section {
+	border-bottom:1px solid #CCC;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 14px;
+	margin-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 14px;
+	padding-left: 0;
+}
+
+#Content li {
+	list-style:square;
+	margin-left:30px;
+}
+.intro h2 {
+	font-size:20px;
+}
+/******************************************************** Form Styles ****************/
+label {
+	line-height:20px;
+}
+input[type=text], select  {
+	margin:0 0 5px 0;
+}
+table {
+
+}
+td {
+	vertical-align:top;
+}
+table.Standard, table.DynamicColumn {
+	margin:0 0 0 20px;
+}
+table.Standard tr td:first-child {
+	width:170px;
+}
+table.DynamicColumn td {
+	padding:0 20px 10px 0;
+}
+.info {
+	font-size:.9em;
+}
+/******************************************************** Footer Styles ****************/
+#Footer {
+	height:28px;
+	padding:0 10px;
+	margin-top:20px;
+	background:url(../images/bgFooter.png) repeat-x;
+	border:1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(lib/PIE.htc);
+}
+#Footer a {
+	line-height:28px;
+	padding:0 10px;
+	color:#486E8D;
+	text-decoration:none;
+}
+/******************************************************** Utility Classes ****************/
+.callout {
+	background-color:#F0F0F0;
+	border:1px solid #CCC;
+	padding:15px 7px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(lib/PIE.htc);
+}
+.chatLink {
+	display:inline-block;
+	padding:0 26px 0 0;
+	background:url(../images/iconChat.png) no-repeat right;
+	line-height:20px;
+	color:#404040;
+	font-weight:bold;
+	text-decoration:none;
+}
+.printBtn {
+	display:inline-block;
+	padding:0 0 0 23px;
+	background:url(../images/iconPrint.png) no-repeat center left;
+	line-height:17px;
+}
+
+.DisclosuresBox {
+	overflow:auto;
+	width:520px;
+	border:1px solid #CCC;
+	height:200px;
+	padding:0 20px;
+	margin:5px 0;
+	color:#898989;
+}
+.DisclosuresBox h4 {
+	padding:20px 0;
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.rightlink {
+	float:right;
+	font-size:12px;
+}
+.center {
+	text-align:center;
+	margin:0 auto;
+	display:block;
+}
+.moMargin {
+	margin-bottom:18px;
+}
+.moIndent {
+	margin-left:10px;
+}
+.clear {
+	clear:both;
+	line-height:0;
+}
+.hidden {
+	position:absolute;
+	left:-5000px;
+}

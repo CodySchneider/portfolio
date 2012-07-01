@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--**************************************************************
+ * Author: Cody Schneider
+ * Date: 10-19-2010
+***************************************************************--> 
+  <title>OAC Demo - Make a Deposit</title>
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="lib/greybox.css" rel="stylesheet" type="text/css" />
+	<script src="lib/jquery-1.4.3.min.js" type="text/javascript"></script>
+	<script src="lib/jquery.greybox.js" type="text/javascript"></script>
+	<script src="lib/main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pageContainer">
+		<div id="Header">
+			<p><a href="index.html"><img src="images/logoBank.png" alt="Bank Logo" /></a></p>
+			<div id="SecondaryNavigation">
+				<a href="#" class="chatLink Inactive">Chat online now</a> | 
+				<a class="Inactive" href="#">Bank Home</a> | 
+				<a class="Inactive" href="#">Help</a>
+				<h1>Online Banking</h1>
+			</div>
+		</div><!-- end #Header -->
+		<div id="Sidebar">
+			<div id="Navigation" class="Container">
+				<p>You are applying for...</p>
+				<h2>Checking Account</h2>
+				<p><a class="Inactive" href="#">Learn More</a></p>
+				<hr/>
+				<ul>
+					<li class="complete"><a href="index.html">Get Started</a></li>
+					<li class="complete"><a href="PrimaryAccountHolder.html">Enter Your Information</a></li>
+					<li class="complete"><a href="AccountOptions.html">Select Options</a></li>
+					<li class="complete"><a href="Verification.html">Review Your Information</a></li>
+					<li class="complete"><a href="Disclosures.html">Review Disclosures</a></li>
+					<li class="active"><a href="InitialDeposit.html">Make a Deposit</a></li>
+					<li class=""><a href="Confirmation.html">Application Completed</a></li>
+				</ul>
+			</div>
+			
+			<div id="Info" class="Container">
+				<h3>Need Help?</h3>
+				<p>Call (888) 123-4567</p>
+				<hr/>
+				<p><a href="#" class="chatLink Inactive">Chat online now</a></p>
+			</div>
+			<div id="Security" class="Container">
+				<h3>Security</h3>
+				<hr/>
+				<p>We use the latest security technologies to ensure the safety of your personal information</p>
+				<p>Learn more about our <a class="Inactive" href="#">security features</a> and <a class="Inactive" href="#">privacy policy</a></p>
+				<p><a class="Inactive center" href="#"><img src="images/logoVerisign.png" alt="Verisign Secured" /></a></p>
+			</div>
+		</div><!-- end #Sidebar -->
+		
+		<div id="Content" class="Container">
+
+			<div class="intro section">
+				<h2>Make a Deposit</h2>
+				<p class="moMargin">Making a deposit is part of the process of opening a new account.  Complete the fields below to make a deposit.</p>
+			</div>
+			<fieldset class="section">
+				<h2>Deposit amount</h2>
+				
+                <table class="Standard">
+					<tr>
+						<td><label for="InitialDeposit">Checking Account: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#36;</label></td>
+						<td><input type="text" id="InitialDeposit" name="InitialDeposit"/>
+                        	<p class="info">(Minimum = &#36;100.00)</p></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset class="section">
+				<h2>Deposit type</h2>
+        <p>How do you want to make your deposit? <a class="Inactive" href="#">Not sure which option to choose?</a></p>
+				<table class="DynamicColumn">
+					<tr>
+						<td>
+							<input type="radio" id="DepositTypeElectronic" name="DepositType" value="Electronic transfer" checked="checked" />
+              <label for="DepositTypeElectronic">Transfer money from my account at a different bank</label><br />
+              <input type="radio" id="DepositTypePersonal" name="DepositType" value="Personal check" />
+              <label for="DepositTypePersonal">Send a personal check</label><br />
+	      <input type="radio" id="DepositTypeDirect" name="DepositType" value="Direct deposit" />
+	      <label for="DepositTypeDirect">Make a direct deposit from my account at a  different bank</label>
+						</td>
+					</tr>
+				</table>
+                <div class="callout">
+					
+					<p>When you transfer the initial deposit from your account at a different bank. <br>The account at the other bank:</p>
+					<ul>
+						<li><strong>Must be owned by you.</strong></li>
+						<li><strong>Must be located in the U.S.</strong></li>
+						<li><strong>Cannot be a credit card, brokerage, or investment account.</strong></li>
+					</ul>
+				</div>
+			</fieldset>
+
+			<fieldset class="section">
+				<h2>Funding account information</h2>
+				<p>We will transfer money from the account you identify below.
+				<br><br><strong>Tip:</strong> You can find the necessary account information on your checks or deposit slips for the account.</p>
+				<table class="DynamicColumn">
+					<tr>
+					  <td><p>Account type:</p></td>
+						<td>
+						  <input type="radio" id="AccountTypeChecking" name="AccountType" value="Checking" checked="checked" />
+						  <label for="AccountTypeChecking">Checking</label><br/>
+						  <input type="radio" id="AccountTypeSavings" name="AccountType" value="Savings" />
+						  <label for="AccountTypeSavings">Savings</label>
+						</td>
+						<td rowspan="3">
+							<p style="position:relative;"><img style="position:absolute;top:40px;" src="images/CheckImage.png" alt="Check" /></p>
+						</td>
+						
+					</tr>
+					<tr>
+						<td><label for="RoutingNumber">Routing number:</label></td>
+						<td><input type="text" id="RoutingNumber" name="RoutingNumber"/></td>
+					</tr>
+					<tr>
+						<td><label for="AccountNumber">Account number:</label></td>
+						<td><input type="text" id="AccountNumber" name="AccountNumber"/></td>
+					
+					</tr>
+
+
+				</table>
+						</fieldset>             
+			<fieldset class="section">
+<h2>External account authorization</h2>
+					<tr>
+				<p>Please review and accept the statement below by checking the box.</p>
+					
+                        	</tr>
+							
+			
+        <p><input type="checkbox" id="DisclosuresAgree" name="DisclosuresAgree" value="DisclosuresAgree" />
+      		<label for="DisclosuresAgree">I authorize General Bank to debit my account at the identified bank for my initial deposit amount.</p>
+<tr><td>I further authorize General Bank to debit any account I own at the identified bank for any future<br>deposit I designate.</td></tr><br>
+<br><a class="Inactive" href="#">External Account Authorization.</a></p>
+			<td><p>&nbsp;</p></td>
+			</fieldset>
+
+
+
+<a class="btnContinue" href="ProcessingRoutingNumber.html"><img src="images/btnContinue.png" alt="Continue" /></a>
+		</div><!-- end #Content -->
+		<div class="clear"></div>
+		<div id="Footer">
+			<p>
+				<a class="Inactive" href="#">Privacy</a> | 
+				<a class="Inactive" href="#">Security</a> | 
+				<a class="Inactive" href="#">Terms and Conditions</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

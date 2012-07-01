@@ -1,0 +1,73 @@
+/******************************************************** Normalize Styles ****************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, hr,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight:normal;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************************************************** Default HTML Styles ****************/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+h1 {
+	text-align:center;
+	margin-bottom:20px;
+}
+h2 {
+	color:Black;
+	font-weight:bold;
+	font-size:15px;
+	text-align:center;
+	margin-bottom:20px;
+}
+p {
+	margin:0 0 10px 0;
+	line-height:1.2em;
+	text-align:center;
+}
+
+/******************************************************** Main Layout Styles ****************/
+#pageContainer {
+	width:600px;
+	padding:20px 100px 100px 100px;
+	margin:50px auto;
+	border:1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(lib/PIE.htc);
+}
+.Container {
+	border:1px solid #CCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(lib/PIE.htc);
+	padding:30px 50px 20px 50px;
+	background:url(../images/bgContainer.png) repeat-x;
+}
+.clear {
+	clear:both;
+	line-height:0;
+}
